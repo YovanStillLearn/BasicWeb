@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: arial;
+}
+
+#bungkus {
+  width: 1000px;
+  margin: 20px auto 0;
+}
+
+#logo img {
+  width: 80px;
+}
+
+#menu ul {
+  margin: 0;
+  padding: 0;
+}
+
+#menu ul li {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#logo {
+  margin-bottom: 20px;
+}
+
+#menu {
+  margin-top: 50px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 30px 0;
+}
+
+#menu ul li a:hover,
+#menu ul li a.active {
+  border-bottom: 5px solid;
+}
+
+#top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#banner {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#banner img {
+  width: 100%;
+}
+
+#highlight {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#highlight .box {
+  width: 320px;
+  height: 180px;
+  background: gray;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box img {
+  width: 320px;
+}
+
+#content-one {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#content-one .box-one {
+  width: 400px;
+  height: 180px;
+  background: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.box-one img {
+  width: 400px;
+}
+
+#client {
+  margin-top: 30px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+#client h3 {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#client img {
+  width: 90px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.testimonial-box {
+  background-color: #858585;
+  color: white;
+  min-height: 150px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.testimonial-box h6 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.testimonial-box p {
+  font-size: 9.5px;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+#subscribe {
+  background-color: #ff1493;
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  padding: 25px 15px;
+  margin-bottom: 25px;
+}
+
+#subscribe h6 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#subscribe .input-group {
+  width: 60%;
+}
+
+#subscribe input {
+  font-size: 11px;
+  height: 35px;
+}
+
+#subscribe button {
+  font-size: 11px;
+  height: 35px;
+  font-weight: bold;
+}
+
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 25px;
+  border-radius: 5px 5px 0 0;
+}
+
+#footer h6 {
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#footer p {
+  font-size: 9.5px;
+  margin-bottom: 5px;
+  color: #ccc;
+  line-height: 1.4;
+}
+
+#footer small {
+  font-size: 8.5px;
+  color: #aaa;
+}
+
+.social-icons img {
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
+  cursor: pointer;
+}
