@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let inputAngka = window.prompt("Masukkan batas angka maksimal:");
+      let batasMaksimal = Number(inputAngka);
+
+      if (isNaN(batasMaksimal) || batasMaksimal < 1) {
+        document.getElementById("hasil").innerHTML = "Masukkan angka bulat positif yang valid!";
+      } else {
+        document.write("<h2>Deret Bilangan Ganjil dari 1 sampai " + batasMaksimal + "</h2>");
+        document.write("<p>");
+        for (let i = 1; i <= batasMaksimal; i++) {
+          if (i % 2 !== 0) {
+            document.write(i + " ");
+          }
+        }
+
+        document.write("</p>");
+      }
+    </script>
+  </body>
+</html>

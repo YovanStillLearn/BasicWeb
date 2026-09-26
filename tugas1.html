@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let jumlahMhs = Number(window.prompt("Masukkan Jumlah Mahasiswa: "));
+      for (i = 1; i <= jumlahMhs; i++) {
+        nama = window.prompt("Nama");
+        uts = window.prompt("UTS");
+        uas = window.prompt("UAS");
+        tugas = window.prompt("Tugas");
+        nilaiAkhir = tugas * 0.3 + uas * 0.4 + uts * 0.3;
+        if (nilaiAkhir >= 85) {
+          grade = "A";
+        } else if (nilaiAkhir >= 80) {
+          grade = "A-";
+        } else if (nilaiAkhir >= 75) {
+          grade = "B+";
+        } else if (nilaiAkhir >= 70) {
+          grade = "B";
+        } else if (nilaiAkhir >= 65) {
+          grade = "B-";
+        } else if (nilaiAkhir >= 60) {
+          grade = "C+";
+        } else if (nilaiAkhir >= 55) {
+          grade = "C";
+        } else if (nilaiAkhir >= 45) {
+          grade = "D";
+        } else if (nilaiAkhir >= 0) {
+          grade = "E";
+        } else {
+          grade = "F";
+        }
+
+        document.write("<br /><br />" + i + ". " + nama + "<br />");
+        document.write("Tugas :" + tugas);
+        document.write("<br />UTS: " + uts);
+        document.write("<br />UAS: " + uas);
+        document.write("<br />Nilai Akhir: " + nilaiAkhir.toFixed(2));
+        document.write("<br />Grade: <br>" + grade);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 4</title>
+  </head>
+  <body>
+    <script>
+      do {
+        pilihan = window.prompt("Nilai yang mau di cari Luas/Keliling:");
+        pilihan = pilihan.toLowerCase();
+        if (pilihan !== "luas" && pilihan !== "keliling") {
+          alert("Pilihan tidak valid! Silakan ketik 'luas' atau 'keliling'.");
+        }
+      } while (pilihan !== "luas" && pilihan !== "keliling");
+      if (pilihan === "luas" || pilihan === "keliling") {
+        let panjang = Number(window.prompt("Masukan Nilai Panjang: "));
+        let lebar = Number(window.prompt("Masukan Nilai Lebar: "));
+        if (pilihan === "luas") {
+          let luas = panjang * lebar;
+          document.write("Hitungan: " + panjang + "*" + lebar + "<br/>");
+          document.write("Hasil Luas: " + luas);
+        } else if (pilihan === "keliling") {
+          let keliling = 2 * (panjang + lebar);
+          document.write("Hitungan: " + "2" + " * " + "(" + panjang + "+" + lebar + ")" + "<br/>");
+          document.write("Hasil Keliling: " + keliling);
+        }
+      }
+    </script>
+  </body>
+</html>

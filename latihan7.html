@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan 6</title>
+  </head>
+  <body>
+    <script>
+      let inputAngka = window.prompt("Masukkan batas angka maksimal untuk bilangan prima:");
+      let batasMaksimal = Number(inputAngka);
+
+      if (isNaN(batasMaksimal) || batasMaksimal < 2) {
+        document.write("<h3>Masukkan angka bulat minimal 2 untuk mencari bilangan prima!</h3>");
+      } else {
+        document.write("<h2>Deret Bilangan Prima dari 1 sampai " + batasMaksimal + "</h2>");
+        document.write("<p>");
+
+        let daftarPrima = [];
+
+        for (let i = 2; i <= batasMaksimal; i++) {
+          let apakahPrima = true;
+
+          for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+              apakahPrima = false;
+              break;
+            }
+          }
+          if (apakahPrima) {
+            daftarPrima.push(i);
+          }
+        }
+
+        document.write(daftarPrima.join(", "));
+        document.write("</p>");
+      }
+    </script>
+  </body>
+</html>
